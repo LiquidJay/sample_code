@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ET Holiday Gift Guide</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/holiday.css">
+	<script src="scripts/modernizr-custom.js"></script>
+</head>
+<body class="holiday-page">
+	<!-- nav-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 no-padding">
+				<div id="banner">
+					<div class="star-wrapper left">
+						<div class="star-icon more"></div>
+						<div class="star-icon md"></div>
+						<div class="star-icon lg"></div>
+						<div class="star-icon sm"></div>
+					</div>
+					<div class="headline">HOLIDAY GIFT GUIDE</div>
+					<div class="star-wrapper right">
+						<div class="star-icon lg"></div>
+						<div class="star-icon md"></div>
+						<div class="star-icon sm"></div>
+						<div class="star-icon more"></div>
+					</div>
+				</div>
+			</div><!-- /col -->
+		</div><!-- /row -->
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 no-padding">
+				<div class="ad leaderboardAd top container-fluid">
+					<div class="row">
+						<img src="http://placehold.it/728x90">
+					</div>
+				</div>
+			</div><!-- /col -->
+		</div><!-- /row -->
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="intro">
+					<header>
+						<h1 class="heading">The Perfect Gift</h1>
+					</header>
+					<p class="intro-txt">
+					   The holidays are coming up fast and it's never too early to start thinking about what to get those hard-to-shop- for loved ones. ET has a list of goodies to fit every kind of person in your life without breaking the bank. Read on to see our suggestions for some of the best stocking stuffers of 2015.
+					</p>
+				</div>
+			</div><!-- /col -->
+		</div><!-- /row -->
+
+		<!-- product -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="product-wrapper">
+					<script id="product-template" type="text/x-handlebars-template">
+						<div id=item-{{id}} class="product" data-product-id={{id}}>
+							<div class="product-caption">
+								<h2 class="product-name">{{name}}</h2>
+								<div class="product-by">{{from}}</div>
+							</div>
+							<div class="product-image visible-mobile"> 
+								<a class="product-link" href="{{buyLink}}" data-product-id={{id}} target ="_blank"> 
+									<picture>									
+										<source srcset={{imgOverviewUrl}} media="(min-width: 1024px)">
+										<source srcset={{imgModalUrl}}>
+										<img src={{imgOverviewUrl}}>
+									</picture>
+								</a>  
+							</div>
+							<div class="product-image visible-desktop"> 
+									<picture>									
+										<source srcset={{imgOverviewUrl}} media="(min-width: 1024px)">
+										<source srcset={{imgModalUrl}}>
+										<img src={{imgOverviewUrl}}>
+									</picture>
+							</div>
+							<ul class="purchase-info">
+								<li class="info-item"><a href="{{buyLink}}" target="_blank" class="buy-button product-link" data-product-id={{id}}>BUY</a></li>
+								<li class="info-item"><a href="{{buyLink}}" target="_blank" class="price product-link" data-product-id={{id}}>{{price}}</a></li>
+								<li class="info-item"><a href="{{buyLink}}" class="website product-link"  data-product-id={{id}}>{{website}}</a></li>
+							</ul>
+							<div class="product-text">
+								<div class="product-what"><span class="product-bold">What Is It:</span> {{{productWhat}}}</div>
+								<div class="product-why"><span class="product-bold">Why We Picked It:</span> {{{productWhy}}}</div>
+								<div class="perfect-for"><span class="product-bold">Perfect For:</span> {{{perfectFor}}}</div>
+							</div>
+							<div class="product-caption-hover">
+								<div class="star-wrapper-gold left">
+									<div class="star-icon md gold"></div>
+									<div class="star-icon lg"></div>
+									<div class="star-icon sm"></div>
+								</div>
+								<h2 class="product-name">{{name}}</h2>
+								<div class="star-wrapper-gold right">
+									<div class="star-icon lg"></div>
+									<div class="star-icon md"></div>
+									<div class="star-icon sm"></div>
+									<div class="star-icon more"></div>
+								</div>
+								<div class="product-by">{{from}}</div>
+								<a href="#" class="buy-button product-link" >MORE INFO</a>
+							</div>
+						</div><!-- /product -->
+					</script>
+					<!--modal -->
+					<div id="productModal" class="modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog modal-lg" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					      </div>
+					      <div class="modal-body">
+					      	<div class="image-col">
+								<div class="product-image"> 
+									<a href="#" class="product-link" >
+										<img src="">
+									</a>
+								</div>
+							</div>
+							<div class="product-details">
+								<div class="product-caption">
+									<div class="star-wrapper-gold left">
+										<div class="star-icon md gold"></div>
+										<div class="star-icon lg"></div>
+										<div class="star-icon sm"></div>
+									</div>
+									<h2 class="product-name"></h2>
+									<div class="star-wrapper-gold right">
+										<div class="star-icon lg"></div>
+										<div class="star-icon md"></div>
+										<div class="star-icon sm"></div>
+										<div class="star-icon more"></div>
+									</div>
+									<div class="product-by"></div>
+								</div>
+								<ul class="purchase-info">
+									<li class="info-item"><a href="#" class="buy-button product-link" target="_blank">BUY</a></li>
+									<li class="info-item"><a href="#" class="price product-link" target="_blank"></a></li>
+									<li class="info-item"><a href="#" class="website product-link" target="_blank"></a></li>
+								</ul>
+								<div class="product-text">
+									<div class="product-what"><span class="product-bold">What Is It:</span> <span id="productWhat"></span></div>
+									<div class="product-why"><span class="product-bold">Why We Picked It:</span> <span id="productWhy"></span></div>
+									<div class="perfect-for"><span class="product-bold">Perfect For:</span> <span id="perfectFor"></span></div>
+								</div>
+								<div class="other-products">
+									<div class="inventory">
+										<span id="current-item"></span> / <span id="total-items"></span>
+									</div>
+									<div class="browse-items">
+										<a class="prev browse-btn" href="#">&lt;</a>
+										<a class="next browse-btn" href="#">&gt;</a>
+									</div>
+								</div>
+							</div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- /modal -->
+				</div><!-- /product-wrapper -->
+			</div><!-- /col -->
+		</div><!-- /row -->	
+	</div><!--/container-fluid -->
+		
+	<div class="ad leaderboardAd bottom container-fluid">
+		<div class="row">
+			<img src="http://placehold.it/728x90">
+		</div>
+	</div>
+	
+	<footer>
+		<!-- footer  -->
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+	<script src="scripts/handlebars-v4.0.4.js"></script>
+	<script src="scripts/app.js"></script> 
+</body>
+</html>

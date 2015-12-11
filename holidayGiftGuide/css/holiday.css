@@ -1,0 +1,625 @@
+/* Holiday Styles */
+img{
+	 max-width:100%;
+    height:auto;
+}
+.ad {
+    text-align: center;
+}
+.ad.leaderboardAd.top {
+	background-color: #eeeeee;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.ad.leaderboardAd.bottom {
+	background-color: #eeeeee;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+#banner{
+	align-items: center;
+	background-color: #d9b66e;
+	height: 55px;
+	text-align: center;
+}
+#banner .headline{
+	color: #fff;
+	display: inline-block;
+	font-family: 'Interstate Cond Bold Italic'; 
+	font-size: 33px;
+	margin-top: 5px;
+}
+.star-wrapper{
+	display: inline-block;
+	position: relative;
+	height: 25px;
+	width: 50px;
+	top: -5px;
+}
+.star-icon{
+	position: absolute;
+}
+.star-icon.more{
+	display:none;
+}
+.star-wrapper.left .star-icon.more{
+	background-image: url("../images/star-sm.png");
+	background-size:cover;
+	width:11px;
+	height: 11px;
+	right: 65px;
+	top:7px;
+	-webkit-animation: littleBigStar 1.6s ease-out infinite alternate-reverse;
+	animation: littleBigStar 1.6s ease-out infinite alternate-reverse;
+}
+.star-wrapper.right .star-icon.more{
+	background-image: url("../images/star-sm.png");
+	background-size:cover;
+	height: 11px;
+	width:11px;
+	left: 55px;
+	top: 7px;
+	-webkit-animation: littleBigStar 1.5s ease-in infinite alternate-reverse;
+	animation: littleBigStar 1.5s ease-in infinite alternate-reverse;
+}
+.star-wrapper.left .star-icon.sm{
+	background-image: url("../images/star-sm.png");
+	background-size:cover;
+	width: 11px;
+	height: 11px;
+	right: 5px;
+	top:20px;
+	-webkit-animation: littleBigStar 1s ease-in infinite alternate-reverse;
+	animation: littleBigStar 1s ease-in infinite alternate-reverse;
+}
+.star-wrapper.right .star-icon.sm{
+	background-image: url("../images/star-sm.png");
+	background-size:cover;
+	width:11px;
+	height: 11px;
+	left:40px;
+	top: 15px;
+	-webkit-animation: littleBigStar 2s ease-in-out infinite alternate-reverse;
+	animation: littleBigStar 2s ease-in-out infinite alternate-reverse;
+}
+.star-wrapper.left .star-icon.md{
+	background-image: url("../images/star-md.png");
+	background-size:cover;
+	width:15px;
+	height: 15px;
+	right:38px;
+	top: 15px;
+	-webkit-animation: littleBigStar 2s ease-in-out infinite alternate-reverse;
+	animation: littleBigStar 2s ease-in-out infinite alternate-reverse;
+}
+.star-wrapper.right .star-icon.md{
+	background-image: url("../images/star-md.png");
+	background-size:cover;
+	width:15px;
+	height: 15px;
+	top:0;
+	left: 20px;
+	-webkit-animation: littleBigStar 2s linear 1s infinite alternate-reverse;
+	animation: littleBigStar 2s linear 1s infinite alternate-reverse;
+}
+.star-wrapper.left .star-icon.lg{
+	background-image: url("../images/star-lg.png");
+	background-size:cover; 
+	width: 22px;
+	height: 22px;
+	right: 15px;
+	top: 0px;
+	-webkit-animation: littleBigStar 2s linear 1s infinite alternate-reverse;
+	animation: littleBigStar 2s linear 1s infinite alternate-reverse;
+}
+.star-wrapper.right .star-icon.lg{
+	background-image: url("../images/star-lg.png");
+	background-size:cover;
+	width: 22px;
+	height: 22px;
+	left: 0px;
+    top: 15px;
+	-webkit-animation: littleBigStar 1s ease-in infinite alternate-reverse;
+	animation: littleBigStar 1s ease-in infinite alternate-reverse;
+}
+.star-wrapper-gold{
+	display: none;
+	position: relative;
+	height: 25px;
+	width: 50px;
+}
+.star-wrapper-gold.left .star-icon.sm{
+	background-image: url("../images/star-sm-gold.png");
+	background-size:cover;
+	height: 14px;
+	right: 10px;
+    top: -3px;
+	width: 14px;
+	-webkit-animation: twinkletwinkleStar 3s ease-in infinite alternate-reverse;
+	animation: twinkletwinkleStar 3s ease-in infinite alternate-reverse;
+}
+.star-wrapper-gold.right .star-icon.sm{
+	background-image: url("../images/star-sm-gold.png");
+	background-size:cover;
+	height: 14px;
+    left: -30px;
+    top: 25px;
+	width: 14px;
+	-webkit-animation: twinkletwinkleStar 3s ease-in infinite alternate-reverse;
+	animation: twinkletwinkleStar 3s ease-in infinite alternate-reverse;
+}
+.star-wrapper-gold.left .star-icon.md{
+	background-image: url("../images/star-md-gold.png");
+	background-size:cover;
+	height: 19px;
+	right: -30px;
+    top: -17px;
+	width: 19px;
+	-webkit-animation: twinkletwinkleStar 1.5s ease-in infinite alternate-reverse;
+	animation: twinkletwinkleStar 1.5s ease-in infinite alternate-reverse;
+}
+.star-wrapper-gold.right .star-icon.md{
+	background-image: url("../images/star-md-gold.png");
+	background-size:cover;
+	height: 19px;
+	top: 35px;
+    left: -20px;
+	width: 19px;
+	-webkit-animation: twinkletwinkleStar 1.5s ease-in infinite alternate-reverse;
+	animation: twinkletwinkleStar 1.5s ease-in infinite alternate-reverse;
+}
+.star-wrapper-gold.left .star-icon.lg{
+	background-image: url("../images/star-lg-gold.png");
+	background-size:cover;
+	height: 29px;
+	right: -15px;
+    top: -30px;
+	width: 29px;
+	-webkit-animation: twinkletwinkleStar 2.5s ease-in infinite alternate-reverse;
+	animation: twinkletwinkleStar 2.5s ease-in infinite alternate-reverse;
+}
+.star-wrapper-gold.right .star-icon.lg{
+	background-image: url("../images/star-lg-gold.png");
+	background-size:cover;
+	height: 29px;
+	top: 15px;
+    left: -5px;
+	width: 29px;
+	-webkit-animation: twinkletwinkleStar 2.5s ease-in infinite alternate-reverse;
+	animation: twinkletwinkleStar 2.5s ease-in infinite alternate-reverse;
+
+}
+.twinkleLittleStar:nth-child(odd){
+	-webkit-animation: twinkletwinkleLittleStar 1s ease-in infinite alternate-reverse !important;
+	animation: twinkletwinkleLittleStar 1s ease-in infinite alternate-reverse !important;	
+}
+
+.twinkleLittleStar:nth-child(even){
+	-webkit-animation: twinkletwinkleLittleStar 2s ease-in-out infinite alternate-reverse !important;
+	animation: twinkletwinkleLittleStar 2s ease-in-out infinite alternate-reverse !important;	
+}
+
+/* animate stars */
+@-webkit-keyframes littleBigStar{
+	0%{ -webkit-transform: scale(1);}
+	75%{ -webkit-transform: scale(1.5);}
+	100%{ -webkit-transform: scale(.75);}
+}
+@keyframes littleBigStar{
+	0%{ transform: scale(1);}
+	75%{ transform: scale(1.5);}
+	100%{ transform: scale(.75);}
+}
+@-webkit-keyframes twinkletwinkleStar{
+	0%{ opacity: 0;}
+	50%{ opacity: 1;}
+	100%{ opacity: .25;}
+}
+@keyframes twinkletwinkleStar{
+	0%{ opacity: 0;}
+	50%{ opacity: 1;}
+	100%{ opacity: .25;}
+}
+@-webkit-keyframes twinkletwinkleLittleStar{
+	0%{ opacity: 0; transform: scale(1);}
+	50%{ opacity: 1; transform: scale(1.5);}
+	100%{ opacity: .25; transform: scale(.75);}
+
+}
+@keyframes twinkletwinkleLittleStar{
+	0%{ opacity: 0; transform: scale(1);}
+	50%{ opacity: 1; transform: scale(1.5);}
+	100%{ opacity: .25; transform: scale(.75);}
+}
+#intro{
+	margin-bottom: 25px;
+}
+header .heading{
+	color:#212121;
+	font-family: "Interstate Condensed Bold";
+	font-size: 44px;
+	margin: 25px 0 0 0;
+}
+header::after{
+    background-color: #c29f57;
+    content: " ";
+    display: block;
+    height: 6px;
+    margin: 15px 0 0 0;
+    padding: 0px;
+    width: 64px;
+}
+header .author{
+	color:#555555;
+	font-family:Interstate Light;
+	font-size:12px;
+}
+header .author span{
+	color:#555555;
+	font-family:Interstate Regular;
+	font-size:12px;
+}
+.product{
+	margin: 30px 0 60px 0;
+	position: relative;
+}
+.product-caption-hover,
+.product-caption-hover.hover{
+	display: none;
+}
+.product-name{
+	color:#1f1f1f;
+	font-family: "Interstate Light";
+	font-size: 28px;
+	font-weight: 100;
+	margin: 0;
+}
+.product-by{
+	color: #999999;
+	font-family: "Interstate Light";
+	font-size: 14px;
+	font-weight: 100;
+	font-style: italic;
+}
+.product-image{
+	margin:25px auto;
+}
+.product-text, 
+.intro-txt{
+	color: #1f1f1f;
+	font-family: "Interstate Light";
+	font-size: 15px;
+	line-height: 22px;
+	margin: 30px 0 0 0;
+}
+.intro-txt{
+	line-height: 24px;
+}
+.product-why{
+	margin: 3px 0;
+}
+.product-bold{
+	font-family: "Interstate Regular";
+}
+.into-txt{
+	line-height: 24px;
+}
+ul.purchase-info{
+	margin-top: 30px;
+	padding:0;
+}
+ul.purchase-info .info-item{
+	display: inline-block;
+	list-style: none;
+	font-family: "Interstate Light";
+	font-size: 14px;
+}
+.product-link:hover{
+	cursor:pointer;
+	text-decoration: none;
+}
+.buy-button,
+.buy-button:active,
+.buy-button:focus{
+	background-color: rgba(255,18,55, 1);
+	border-radius: 3px;
+	font-size: 13px;
+	font-family: "Interstate Regular";
+	color:#fff;
+	padding:4px 20px;
+	margin-right:10px;
+	transition: all 1.25s;
+	text-decoration: none;
+}
+.buy-button:hover{
+	background-color: rgba(255,18,55, .8);
+	color: #fff;
+}
+.product-caption-hover .buy-button,
+.product-caption-hover .buy-button:active,
+.product-caption-hover .buy-button:focus{
+	font-family: "Interstate Light";
+}
+ul.purchase-info .price,
+ul.purchase-info .website{
+	border-left: 1px solid #dddddd;
+}
+ul.purchase-info .price, 
+ul.purchase-info .website{
+	color:#ff1237;
+	padding:0 12px;
+}
+ul.purchase-info .price:hover, 
+ul.purchase-info .website:hover{
+	text-decoration: underline;
+}
+.other-products{
+	margin-top: 10px;
+}
+.inventory, .browse-items{
+	display: inline-block;
+}
+.inventory{
+	color: #1f1f1f;
+    font-family: "Interstate Light";
+    font-size: 12px;
+   	margin-top: 10px; 
+}
+.browse-items{
+	float: right;
+}
+.browse-btn, 
+.browse-btn:focus, 
+.browse-btn:active{
+	color: #1f1f1f;
+    font-family: "Interstate Light";
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+.browse-btn:hover{
+	color: #1f1f1f;
+	text-decoration: none;
+}
+/* Bootstrap overrides */
+	.modal-backdrop {
+	   background: rgba(255,255,255, .9);
+	}
+	#productModal .modal-body {
+		min-height: 618px;
+	    position: relative;
+	    padding: 0 30px;
+	}
+	#productModal .modal-header{
+		padding-top: 0;
+		height: 50px;
+	}
+	#productModal .modal-header,
+	#productModal .modal-footer{
+		border: none;
+	}
+	#productModal .modal-content{
+		border-radius:0;
+		border: 0;
+	}
+	 #productModal .close-btn{
+	 	border: 0;
+	 	background: none;
+	 	color:#1f1f1f; 
+	    font-weight: 200;
+	 	float: right;
+	 	transition: all .25s;
+	 	font-size: 30px;
+	}
+	#productModal .close-btn:hover{
+		border-radius: 0;
+		color: rgba(31, 31, 31,.8);
+		cursor: pointer;
+		text-decoration: none;
+	}
+	#productModal .product-image{
+		max-width: 355px;
+	}
+	.visible-desktop{
+		display: none;
+	}
+/* media queries */
+@media (min-width: 1024px){
+	.visible-mobile{
+		display: none;
+	}
+	.visible-desktop{
+		display: block;
+	}
+	.modal-lg {
+    	width: 1024px;
+	}
+	.star-icon.more{
+		display: block;
+	}	
+	#intro{
+		width: 650px;
+		margin:0 auto;
+		text-align: center;
+	}
+	#banner .headline{
+		font-family: "Interstate Cond Bold Italic";
+		font-size: 37px;
+		margin-top: 1px;
+	}
+	header .heading{
+		color:#212121;
+		font-family: "Interstate Condensed Bold";
+		font-size: 62px;
+		margin: 25px 0 0 0;
+	}
+	header::after{
+		    margin: 10px auto 0 auto;	
+	}
+	.star-wrapper-gold{
+		display: inline;
+	}
+	.intro-txt{
+		font-size: 16px;
+		line-height: 28px;
+	}
+	#product-wrapper{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin: 20px auto 0 auto;
+		width:970px;
+	}
+	.product{
+		align-self: baseline;
+		-webkit-align-self: baseline;
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+		margin:0;
+		width: 320px;
+	}
+	.product-name{
+		font-size: 31px;
+		margin: 0;
+	}
+	.product-by{
+		font-size: 14px;
+		margin-top: 2px;
+	}
+	#productModal .product-image{
+		margin: 0;
+	}
+	#productModal .product-why{
+		margin: 1px 0;
+	}
+	#item-4.product,
+	#item-6.product,
+	#item-9.product,
+	#item-11.product{
+		width: 420px;
+		-webkit-flex-grow: 2;
+		flex-grow: 2;
+	}
+	#item-3.product .product-image{
+		left: 100px;
+		position: relative;
+	}
+	#item-7.product{
+	    position: relative;
+	    right: 60px;
+    	bottom: 75px;
+	}
+	#item-11.product{
+		align-self: flex-start;
+		-webkit-align-self: flex-start;
+		left: 50px;
+		position: relative;
+	}
+	#item-12.product{	        
+    	bottom: 250px;
+    	-webkit-flex-grow: 0;
+		flex-grow: 0;
+    	left: 500px;
+    	position: relative;
+	}
+	.product-name{
+		display: inline;
+	}
+	.product .purchase-info,
+	.product .product-text,
+	.product .product-caption{
+		display: none;
+	}
+	.product:hover{
+		cursor:pointer;
+	}
+	.product-caption{
+		position: relative;
+	}
+	.product-caption-hover{
+		background: rgba(255,255,255, .9);
+		margin: auto;
+		position: absolute;
+		padding: 30px;
+		top: 40%;
+		-moz-transition: all 0.3s ease-in-out;
+  		-o-transition: all 0.3s ease-in-out;
+  		-webkit-transition: all 0.3s ease-in-out;
+  		transition: all 0.3s ease-in-out;
+  		width:100%;
+	}
+	.product-caption-hover.hover{
+		display: block;
+	}
+	.product-caption-hover .buy-button{
+    	display: inline-block;
+		margin-top: 10px;
+	}
+	#productModal .image-col{
+		float: left;
+	}
+	#productModal .product-details{
+		padding-top: 70px;
+	}
+	#productModal .image-col{
+		width: 62%;
+	}
+	#productModal .product-details{
+		width: 38%;
+	}
+	#productModal .image-col,
+	#productModal .product-details{
+		display: inline-block;
+		height: 100%;
+		position: relative;
+		min-height: 600px;
+	}
+	#productModal .product-image{
+		max-width: 600px;
+	}
+	.product-details{
+		width:350px;
+	}
+	.other-products{
+		bottom: 0;
+   		position: absolute;
+    	width: 100%;
+	}
+	.inventory{
+		font-family: "Interstate Light";
+		font-size: 14px;
+	}
+	#current-item{
+		font-weight: bold;
+	}
+	.browse-btn,
+	.browse-btn:active,
+	.browse-btn:focus {
+		background-color: rgba(221,221,221,.9); 
+		border-radius: 50%;
+  		display: inline-block;
+		color:#fff;
+		font-family: "Interstate Light";
+		font-size: 24px;
+		height: 40px;
+		line-height: 40px;
+		width: 40px;
+		transition: all .25s;
+	}
+	.browse-btn:hover{
+		background-color: rgba(221,221,221,.8);
+		color:#1f1f1f; 
+		text-decoration: none;
+	}
+}
+
+/* media queries */
+@media (min-width: 1200px){
+	.modal-lg {
+    	width: 1024px;
+	}
+}
+
+
+
